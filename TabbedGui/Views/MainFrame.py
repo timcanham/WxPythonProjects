@@ -10,3 +10,5 @@ class MainFrame(wx.Frame):
                  name = "MainFrame"):
         super(MainFrame,self).__init__(parent, id, title, pos, size, style, name)
         self.panel = wx.Panel(self)
+        self.panel.SetBackgroundColour(wx.BLACK)
+        self.button = wx.Button(self.panel,label="Push Me",pos=(50,50))
